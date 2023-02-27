@@ -8,28 +8,40 @@
 	<meta name="description" content="Ejemplo de HTML5, CSS3">
 	<meta name="keywords" content="HTML5, CSS3">
 	<title>PgCortes's blog</title>
-	<link rel="stylesheet" href="misestilos.css">
-	<link rel="shortcut icon" href="imagenes/escudo.ico" />
+	<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 
 		<section class="container">
 
-			<div class="header grid-col-span-3">
+			<div class="row">
 				<img src="images/backend_topic_images/backend.png" class="header-image">
 				<h1>Programmercortes's Blog</h1>
 				<h2>A place to learning web development theory</h2>
 			</div>
-			<div class="navigation-bar grid-col-span-3">
-
-				<div class="nav-bar-item"><a href="web-development-topic.html">Web development</a></div>
-				<div class="nav-bar-item"><a href="frontend-topic.html">Frontend</a></div>
-				<div class="nav-bar-item"><a href="backend-topic.html">Backend</a></div>
-				<div class="nav-bar-item"><a href="api-topic.html">API</a></div>	
+			<div class="row">
+				<nav class="navbar navbar-expand-lg bg-body-tertiary">
+					<div class="container-fluid">
+					  <a class="navbar-brand" href="#"></a>
+					  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav">
+						  <a class="nav-link active" aria-current="page" href="/web-development-topic.html">Web Development</a>
+						  <a class="nav-link active" href="/frontend-topic.html">Frontend</a>
+						  <a class="nav-link disabled" href="/backend-topic.html">Backend</a>
+						  <a class="nav-link active" href="/api-topic.html">API</a>
+						</div>
+					  </div>
+					</div>
+				  </nav>
 		   </div>
 
-		   <div class="articles grid-col-span-2">
+		   <div class="row">
+
+			<div class="col">
 				<!-- first article -->
 			<article>
 				<div class="article-header">
@@ -129,20 +141,30 @@
 			<div class="article-footer"></div>
 			
 			</article>
-		</div>
-		
-		<div class="aside">
-			<blockquote><h2>What is a server?</h2></blockquote>
-			<br>
-			<blockquote>A server is simply a computer that listens
-				 for incoming requests. Though there are machines 
-				 made and optimized for this particular purpose, any 
-				 computer that is connected to a network can act as a 
-				 server. In fact, you will often use your very own 
-				 computer as server when developing apps.</blockquote>
+			</div>
+			<div class="col">
+					<blockquote><h2>What is a server?</h2></blockquote>
+					<br>
+					<blockquote>A server is simply a computer that listens
+						 for incoming requests. Though there are machines 
+						 made and optimized for this particular purpose, any 
+						 computer that is connected to a network can act as a 
+						 server. In fact, you will often use your very own 
+						 computer as server when developing apps.</blockquote>
+
+						 <blockquote><h2>What is a server?</h2></blockquote>
+						 <br>
+						 <blockquote>A server is simply a computer that listens
+							for incoming requests. Though there are machines 
+							made and optimized for this particular purpose, any 
+							computer that is connected to a network can act as a 
+							server. In fact, you will often use your very own 
+							computer as server when developing apps.</blockquote>
+			</div>
+				
 		</div>
 
-		<div class="footer grid-col-span-3	">
+		<div class="row">
 			Reserved Rights &copy; 2023 
 		</div>
 		</section>
